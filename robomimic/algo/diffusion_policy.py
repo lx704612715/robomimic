@@ -671,9 +671,7 @@ class ConditionalUnet1D(nn.Module):
         global_feature = self.diffusion_step_encoder(timesteps)
 
         if global_cond is not None:
-            global_feature = torch.cat([
-                global_feature, global_cond
-            ], axis=-1)
+            global_feature = torch.cat([global_feature, global_cond], axis=-1)
         
         x = sample
         h = []
