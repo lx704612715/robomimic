@@ -9,7 +9,7 @@ imageio
 imageio-ffmpeg
 matplotlib
 egl_probe>=1.0.1
-torch
-torchvision
+#torch
+#torchvision
 diffusers==0.11.1
 pytorch3d==0.7.3
